@@ -4,7 +4,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/MichaelDao/version-bump/internal/config"
+	"github.com/MichaelDao/version-bump/pkg/config"
 	"github.com/urfave/cli"
 )
 
