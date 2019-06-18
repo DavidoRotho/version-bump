@@ -10,9 +10,22 @@ import (
 
 func main() {
 	cli := cli.NewApp()
-	config.SetConfiguration(cli)
+		
+	config.ParseCLi(cli)
 	err := cli.Run(os.Args)
 	if err != nil {
 		log.Fatal(err)
 	}
+
+	// TODO LOCK  
+
+	// TODO getHistory()
+	// TODO Calculate()
+	// TODO BuildMeta()
+	// TODO AddBuild()
+
+	// TODO UNLOCK  
+
+	// TODO final PR stuff
 }
+

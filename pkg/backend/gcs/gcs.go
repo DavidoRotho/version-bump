@@ -1,9 +1,16 @@
 package gcs
 
-func getArtefact() {
-	// TODO get artefact from the bucket
-}
+import (
+	"github.com/MichaelDao/version-bump/pkg/backend"
+)
 
-func saveArtefact() {
-	// TODO push artefact back into the bucket
-}
+/*
+
+List<Build> getHistory();
+void lock();
+void unlock();
+Build addNewBuild(BuildMeta buildMeta);
+
+*/
+
+func intiializeBackend

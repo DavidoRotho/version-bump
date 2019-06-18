@@ -1,13 +1,24 @@
-package buildMeta
+package buildmeta
 
-func getHumanVersion() {
-	// TODO this will contain <prefix>.<AugNum>
-}
+// // this is a struct
+// /*
 
-func setCommitHash() {
-	// TODO utilize git package to figure out the git hash
-}
+// struct BuildMeta {
+// 	string commitHash;
+// 	string humanVersion;
+// 	DateTime timeStamp;
+// 	... as discussed
+// }
 
-func timeStamp() {
-	// TODO get the DateTime stamp
+// meta = BuildMeta("blah", "blah", today);
+// print meta.commitHash
+
+// may be you don't need get methods
+// */
+
+// BuildMeta will store all meta information about our version
+type BuildMeta struct {
+	CommitHash string
+	HumanVersion string
+	Timestamp string
 }
