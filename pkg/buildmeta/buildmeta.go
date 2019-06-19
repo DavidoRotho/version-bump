@@ -18,7 +18,7 @@ package buildmeta
 
 // BuildMeta will store all meta information about our version
 type BuildMeta struct {
-	CommitHash string
+	CommitHash   string
 	HumanVersion string
-	Timestamp string
+	Timestamp    string
 }

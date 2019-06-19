@@ -1,10 +1,10 @@
 package build
 
 import (
-	"testing"
 	"fmt"
-	
-	"github.com/MichaelDao/version-bump/pkg/buildmeta"
+	"testing"
+
+	// "github.com/MichaelDao/version-bump/pkg/buildmeta"
 )
 
 func TestGetBuild(t *testing.T) {
@@ -15,13 +15,13 @@ func TestGetBuild(t *testing.T) {
 func getBuild() Build {
 	// Run the app
 	var testMeta = buildmeta.BuildMeta{
-		CommitHash: "test",
+		CommitHash:   "test",
 		HumanVersion: "test",
-		Timestamp: "test",
+		Timestamp:    "test",
 	}
-	
-	var newBuild = Build {
-		meta: testMeta,
+
+	var newBuild = Build{
+		meta:        testMeta,
 		buildNumber: 1,
 	}
 	return newBuild
